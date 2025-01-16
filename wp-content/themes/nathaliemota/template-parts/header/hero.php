@@ -1,26 +1,21 @@
-<div class="hero-header">
-    <?php
-    $args = array(
-        'post_type' => 'project',
-        'orderby' => 'rand',
-        'posts_per_page' => '1',
-    );
-    $query = new WP_Query($args);
+<section class="hero-header">
+    <div class="interface">
+        <div class="flex">
+            <div class="text-top-site">
+                <h1 class="hero-header__page-title">Transformer des idées en réalité numérique<span>.</span></h1>
+                <p>Bienvenue sur ma page de projets WordPress ! Découvrez mes réalisations alliant créativité, fonctionnalité et design sur mesure. Que ce soit pour un site vitrine, un blog ou une boutique en ligne, chaque projet reflète mon engagement à transformer vos idées en solutions web performantes et esthétiques.</p>
+                <div class="btn-contact">
+                   <a href="#">
+                        <button>Contact</button>
+                   </a>
+                </div>
+            </div>
+            <div class="img-top-site">
 
-    if ($query->have_posts()) {
-        while ($query->have_posts()) {
-            $query->the_post();
-            if (has_post_thumbnail()) : ?>
-                <a href="<?= the_permalink() ?>" alt="<?= the_title() ?>">
-                    <?= the_post_thumbnail("hero", ['class' => 'hero-img']); ?>
-                    <h1 class="hero-header__page-title"></h1>
-                </a>
-    <?php endif;
-        }
-    } else {
-        esc_html_e('Sorry, no posts matched your criteria.');
-    }
-    // Restore original Post Data.
-    wp_reset_postdata();
-    ?>
-</div>
+            </div>
+        </div>
+    </div>
+</section>
+<?php
+get_footer();
+?>

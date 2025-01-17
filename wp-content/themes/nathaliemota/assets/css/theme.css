@@ -1,12 +1,18 @@
 :root{
-  --primary-color: #11121a;
+  --primary-color: #303842;
   --hiver-color: #272832;
   --accent-color: #0071FF;
   --text-color: #c9c9c9;
 }
 
-
-
+/* Style GERAL */
+.interface{
+  max-width: 1280px ;
+  margin: 0 auto;
+}
+.flex{
+  display: flex;
+}
 
 /* Estilizando o cabeçalho */
 
@@ -90,29 +96,128 @@
   display: none; /* Oculta o botão de menu em dispositivos grandes */
 }
 
-.hero-header {
-  position: relative;
-  width: 100vw;
-  height: auto;
-  /* padding: 0px 159px 0px 159px; */
-}
 
+
+/* TOP SITE*/
+section.hero-header {
+ padding: 40px 4%;
+}
+section.hero-header .flex{
+  align-items: center;
+  justify-content: center;
+  gap:90px
+
+}
 .hero-header__page-title {
-  font-family: "Space Mono", monospace;
-  font-size: 40px; /* Ajuste para tamanhos responsivos e equilibrados */
+
+  font-family: "Slabo 27px", serif;
+  font-style: normal;
+  font-size: 50px; /* Ajuste para tamanhos responsivos e equilibrados */
   font-style: italic;
   font-weight: 600; /* Aumentei o peso da fonte para um visual mais forte */
-  line-height: 1.1; /* Melhora a legibilidade e o espaçamento */
-  letter-spacing: 4px; /* Adiciona espaçamento entre as letras para um visual mais aberto e moderno */
+  line-height: 40px; /* Melhora a legibilidade e o espaçamento */
+  letter-spacing: 1px; /* Adiciona espaçamento entre as letras para um visual mais aberto e moderno */
   transition: font-size 0.3s, color 0.3s ease-in-out; /* Suaviza a transição de tamanho e cor */
   text-align: center;
+  text-transform: uppercase;
   color: #fefefe;
+  
  
+}
+.hero-header__page-title:hover {
+  color: #fefefe;
+  margin: 40px 0px;
 }
 
-.hero-header__page-title:hover {
+.hero-header h1 span{
+  color: var(--primary-color);
+  font-size: 60px;
 }
+.hero-header p {
+  margin: 40px 0px;
+  text-transform: none;
+  font-family: "Slabo 27px", serif;
+  line-height: 1.5;
+
+
+}
+
+.btn-contact__top button{
+padding: 10px 40px;
+font-size: 18px;
+font-weight: 600;
+background-color: #fefefe;
+border: 0;
+border-radius:30px;
+cursor: pointer;
+display: inline-block;
+border: 1px solid;
+color: var(--primary-color);
+
+}
+.btn-contact__top button:hover{
+  background-color: var(--primary-color);
+  transition: .2s;
+  box-shadow: 0px 0px 15px var(--primary-color);
+  transform: scale(1.05);
+  color:#fff;
+  border: none;
+  
+}
+
+/* Competences Section*/
+.competences{
+  padding: 40px 4%;
+}
+.competences .competences-box{
+  padding: 40px;
+  text-align: center; /* Centraliza o texto dentro da caixa */
+  margin-bottom: 20px;
+}
+.competences .competences-box:hover{
+  border: solid 2px white;
+  border-radius: 20%;
+  transform: scale(1.05);
+  box-shadow:0 0 8px var(--primary-color);
+  transition:.5s;
+}
+.competences-title{
+  color: #ffff;
+  text-align: center;
+}
+.competences-title span{
+  color: var(--primary-color);
+}
+.competences-title__box{
+  color: #ffff;
+}
+.competences .flex{
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+}
+.all-icons {
+  display: flex;
+  flex-wrap: wrap; /* Permite quebrar para a próxima linha, se necessário */
+  gap: 10px; /* Espaço entre os itens */
+  padding-top: 15px;
+}
+
+.icon-box {
+  transform: scale(1);
+  opacity: 0.8;
+  transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+}
+.icon-box:hover {
  
+  transition: all 0.6s ease-in-out;
+  transform: scale(1.2);
+  opacity: 1;
+  
+  
+}
+
+
 
 .single-photo_single {
   font-family: "Space Mono", monospace !important;
@@ -253,10 +358,13 @@ form inpu::placeholder{
   margin: 0px !important;
 }
 .menu-footer-menu-container ul li a {
-  color: black;
+  color: var(--primary-color);
 }
 .menu-footer-menu-container ul li a:hover {
   font-weight: bolder;
+  color: #fff;
+  transition: .2s;
+  transform: scale(1.05); 
 }
 
 /* Estilizando itens do menu */
@@ -283,4 +391,16 @@ form inpu::placeholder{
   color: red;
   font-weight: bold;
   margin-left: 5px;
+}
+.img-top-site img{
+  position: relative;
+  animation:flutuar 2s ease-in-out infinite alternate;
+}
+@keyframes flutuar{
+  0%{
+    top: 0;
+  }
+  100%{
+    top:30px
+  }
 }

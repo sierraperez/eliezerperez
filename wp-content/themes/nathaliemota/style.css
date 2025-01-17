@@ -70,6 +70,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
  }
  html {
   line-height: 1.15;
@@ -86,7 +87,6 @@ body {
   margin: auto;
   overflow: scroll;
   background-color: #000;
-  height: 100vw;
 }
 
 /**
@@ -489,6 +489,7 @@ big {
 --------------------------------------------- */
 body {
   background: #fff;
+  
 }
 
 hr {

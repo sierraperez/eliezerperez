@@ -351,7 +351,7 @@ form inpu::placeholder{
   display: flex;
   font-size: 14px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: bolder;
   color: #000000 !important;
   text-transform: uppercase;
   text-align: center;
@@ -377,7 +377,6 @@ form inpu::placeholder{
 .menu-footer-menu-container ul li a {
   text-decoration: none; /* Remove sublinhado dos links */
   padding: 10px 15px; /* Adiciona espaçamento ao redor dos links */
-  display: block; /* Faz os links ocuparem toda a área dos itens */
 }
 /* Page A propos */
 

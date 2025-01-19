@@ -102,7 +102,6 @@ body {
  */
 main {
   display: block;
-  padding-bottom: 20px;
 }
 
 /**
@@ -1298,13 +1297,19 @@ div.arrow {
 }
 
 /*CSS OVERLAY*/
+.photo-item img{
+  object-position: 100% 0%;
+}
 
 .photo-item:hover img {
   filter: brightness(0.7);
   /* Reduz o brilho para 70%, deixando a imagem mais escura */
   transition: filter 0.5s ease-in-out;
   /* Adiciona transição suave */
+  object-position: 100% 100%;
+  transition: 3s;
 }
+
 /* Gallerire front page */
 
 .photo-item {
@@ -1313,6 +1318,7 @@ div.arrow {
   align-items: center;
   width: 564px;
   height: 495px;
+  cursor: pointer;
 }
 .photo-item a {
   text-decoration: none;
@@ -1322,6 +1328,7 @@ div.arrow {
   width: 100%; /* A imagem ocupa 100% da largura disponível */
   height: auto; /* A altura é ajustada proporcionalmente */
   display: block; /* Remove o espaço extra abaixo da imagem */
+ 
 }
 
 .galerie-photo {
@@ -1339,10 +1346,11 @@ div.arrow {
   gap: 10px; /* Espaço de 10px entre as imagens */
 }
 .galerie-photo img {
-  width: 564px; /* Defina a largura desejada */
-  height: 495px; /* Defina a altura desejada */
-  object-fit: cover; /* Mantém a proporção e cobre o contêiner */
+  width: 564px;
+  height: 495px;
+  object-fit: cover;
 }
+
 .filter-left {
   display: flex;
   width: 40%;

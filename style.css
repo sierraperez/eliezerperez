@@ -1378,8 +1378,9 @@ div.arrow {
   align-items: center;
   justify-content: space-between;
   cursor: pointer;
-  background-color: white;
+ background-color: #000;
   line-height: 38px;
+  color
 }
 
 /* Setinha para indicar que é um dropdown */
@@ -1388,6 +1389,7 @@ div.arrow {
   font-size: 12px;
   color: #b8bbc2;
   margin-left: 8px;
+  
 }
 
 /* Estilização das opções */
@@ -1396,13 +1398,16 @@ div.arrow {
   top: 100%;
   left: 0;
   right: 0;
-  background-color: white;
+  background-color: black;
   border: 1.3px solid #b8bbc2;
   border-radius: 0 0 8px 8px;
   display: none; /* Inicialmente escondido */
   z-index: 1000;
   max-height: 200px;
   overflow-y: auto;
+}
+.dropdown-options:hover{
+  transform: scale(1.05);
 }
 
 /* Cada opção */

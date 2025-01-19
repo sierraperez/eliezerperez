@@ -1,8 +1,8 @@
 :root{
   --primary-color: #303842;
-  --hiver-color: #272832;
-  --accent-color: #0071FF;
-  --text-color: #c9c9c9;
+  --secundary-color:#3a3f4495;
+  --third-color:#748395;
+ 
 }
 
 /* Style GERAL */
@@ -138,6 +138,7 @@ section.hero-header .flex{
   text-transform: none;
   font-family: "Slabo 27px", serif;
   line-height: 1.5;
+  font-size: 20px;
 
 
 }

@@ -25,9 +25,7 @@
     width: auto;
   }
   .hero-header__page-title {
-    font-size: 70px;
-    line-height: 90px;
-    top: 300px;
+   
   }
   /* filtres*/
 
@@ -68,8 +66,7 @@
     left: 0;
     position: fixed;
   }
-  .photo-info-container{
-    
+  .photo-info-container {
   }
   /* buttons*/
   #load-more {
@@ -97,9 +94,7 @@
     color: white;
   }
   .hero-header__page-title {
-    top: 29%;
-
-    font-size: 60px;
+    
   }
 
   .main-navigation ul {
@@ -132,6 +127,13 @@
     max-height: calc(100vh - 120px);
     margin: auto;
     padding-left: 0px;
+  }
+  section.hero-header .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -332,7 +334,6 @@
     align-self: flex-start;
     border-bottom: none;
     width: 80%;
-
   }
   .bloc-photo-miniature {
     display: none;
@@ -382,7 +383,7 @@
     width: 60vw;
     margin-right: -29px;
   }
-  #load-more{
+  #load-more {
     height: 12vw;
     width: 70vw;
   }

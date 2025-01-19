@@ -68,6 +68,7 @@
         </div><!--flex-->
     </div><!--interface-->
 </section><!--competences-->
+
 <?php
 get_footer();
 ?>

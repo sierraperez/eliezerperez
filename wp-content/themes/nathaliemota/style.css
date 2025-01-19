@@ -66,10 +66,18 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+ :root{
+  --primary-color: #303842;
+  --secundary-color:#3a3f4495;
+  --third-color:#748395;
+ 
+}
  * {  
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Slabo 27px", serif;
+
   
  }
  html {
@@ -1400,8 +1408,9 @@ div.arrow {
   align-items: center;
   justify-content: space-between;
   cursor: pointer;
-  background-color: white;
+  background-color: black;
   line-height: 18px;
+  color: var(--primary-color);
 }
 
 /* Setinha  dropdown */
@@ -1425,7 +1434,7 @@ div.arrow {
   top: 100%;
   left: 0;
   right: 0;
-  background-color: white;
+  background-color:black;
   border: 1.3px solid #b8bbc2;
   border-radius: 0 0 8px 8px;
   display: none; /* Inicialmente escondido */
@@ -1445,30 +1454,30 @@ div.arrow {
 
 /* Cor para a primeira opção */
 .dropdown-option:first-child {
-  background-color: white;
+  background-color: var(--third-color);
   color: rgb(0, 0, 0);
 }
 
 /* Estilo para a opção selecionada */
 .dropdown-option.selected {
-  background-color: var(--Color-Selected, #d32f2f);
+  background-color: var(--primary-color);
   color: black;
 }
 
 
 /* Opção com hover */
 .dropdown-option:hover {
-  background-color: #FFD6D6;
+  background-color:var(--secundary-color);
   color: rgb(0, 0, 0);
 }
 
 /* Opção selecionada e hover */
 .dropdown-option.selected:hover {
-  background-color: #E00000;
+  background-color: var(--primary-color);
   color: black;
 }
 .dropdown-option.selected:active {
-  background-color: #FE5858;
+  background-color: var(--secundary-color);
   color: black;
 }
 
@@ -1476,6 +1485,7 @@ div.arrow {
 /* Dropdown ativo (quando aberto) */
 .custom-dropdown.active .dropdown-options {
   display: block;
+  background-color: black;
 }
 
 .menu-hamburguer.open {
